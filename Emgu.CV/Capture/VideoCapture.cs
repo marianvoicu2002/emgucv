@@ -214,6 +214,7 @@ namespace Emgu.CV
 #if TEST_CAPTURE
 #else
             Stop();
+            Thread.Sleep(100);
             CvInvoke.cveVideoCaptureRelease(ref _ptr);
 
 #endif
